@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+
+		<title >No Limite do Amanhã - Cadastro</title>
+
+		<!-- FACEBOOK OG TAGS -->
+		<meta property="og:site_name" content="Visão Detalhada" /> 
+		<meta property="og:title" content="Visão Detalhada - New User" /> 
+		<meta property="og:description" content="#" /> 
+		<meta property="og:image" content="http://f.cl.ly/items/0P0W1i2A0Z1v1Z3J2E2p/fblogo.jpg" /> 
+		
+		<!-- DEVICE SCALING -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" media = "(max-width: 820px)" type="text/css" href="assets/css/mobile.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+		<link href="jquery-ui.css" rel="stylesheet">
+		<link href="assets/css/datepicker.css" rel="stylesheet">
+		<!-- JS -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+		<!-- Script da mascara-->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/jquery.maskedinput.min.js"></script>
+			<script src="assets/js/datepicker.js"></script>
+		<script>
+
+		$(function(){
+			$('#txtFone').mask('(99) 9999-9999');
+			$('#txtCep').mask('99999-999');
+			$('#txtCpf').mask('999999999-99');
+			$('#txtRg').mask('999999999-9');
+		
+		});
+
+		  $(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+ 			
+		</script>
+	</head>
+	<!--aqui termina o script da mascara-->
+<!-- aqui termina o datepicker, serve para colocar calendario no data do aniversario -->
+	<body>
+	
+		<div class="login-container">
+			<div class="login-icon"><a href="index.html"><img src="assets/img/logo-color.png"><br>No Limite do Amanhã</a></div>
+
+			<div class="input-container">
+				<input for="text"   type="text"  id="nome"   class="input" placeholder="Nome" />
+				<input for="text"   type="text"  id="sobre"   class="input" placeholder="Sobrenome" />
+				<input for="txtCpf" type="text"   id="txtCpf"  class="input" placeholder="CPF" />
+				<input for="txtRg"  type="text"    id="txtRg"   class="input" placeholder="RG" />
+				<input for="text"   type="text"  id="datepicker" class="input" placeholder="Data Aniversário" />
+				<input for="textFone" type="text" id="txtFone" class="input" placeholder="Telefone" />
+				<input for="text"   type="email"  id="email"   class="input" placeholder="E-mail" />
+				<input for="text"   type="password" id="senha" class="input" placeholder="Senha" />
+				<input type="checkbox" name="accept" value="yes" class="checkbox">
+				<label for="checkbox">Você confirma que leu os <a href="terms.html"><strong>Termos de serviço</strong></a>. <br></label>
+
+ 				<input id="button" type="button" value="Cadastrar" class="submit" onclick="location.href='login.html' "> 
+ 		
+			</div>
+		</div>
+	</body>
+</html>
